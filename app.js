@@ -32,7 +32,8 @@ app.get('/weather/:city', (req, res) => {
     })
 
     let city = req.params.city
-    let apiKey = '5f51fcb7c4a8b13e38a9fecc27631255'
+    // let apiKey = '5f51fcb7c4a8b13e38a9fecc27631255'
+    let apiKey = ''
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
     fetch(url)
         .then((response) => {
